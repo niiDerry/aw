@@ -1,0 +1,146 @@
+/***************************************/
+/* HEADER */
+/**************************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8eaf2;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 25rem;
+}
+
+/***************************************/
+/* NAVIGATION */
+/**************************************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #343a40;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #152D7A;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.9rem;
+  color: #fff;
+  background-color: #152D7A;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #13296e;
+}
+
+
+
+/***************************************/
+/* HERO SECTION */
+/**************************************/
+.section-hero {
+  background-color: #e8eaf2;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+  background: #fff;
+}
+
+.clients-satisfied {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.clients-imgs {
+  display: flex;
+}
+
+.clients-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #e8eaf2;
+}
+
+.clients-imgs img:last-child {
+  margin: 0;
+}
+
+.clients-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.clients-text span {
+  color: #152D7A;
+  font-weight: 700;
+}
+
+/***************************************/
+/* HOW IT WORKS SECTION */
+/**************************************/
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img {
+  width: 85%;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
