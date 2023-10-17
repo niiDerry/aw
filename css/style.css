@@ -203,7 +203,7 @@
 }
 
 /***************************************/
-/* PACKAGE SECTION */
+/* PLANS SECTION */
 /**************************************/
 .section-services {
   padding: 9.6rem;
@@ -213,6 +213,12 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
+  transition: all 0.4s;
+}
+
+.service:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .service-content {
@@ -273,5 +279,92 @@
 
 .service-img {
   width: 100%;
-  /* background: #f1f3f5; */
+  background-color: #e8eaf2;
+}
+
+.all-plans {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #152D7A;
+}
+
+/***************************************/
+/* TESTIMONIALS & GALLERY SECTION */
+/**************************************/
+.section-testimonials {
+  background-color: #e8eaf2;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+
+}
+
+.testimonial-container {
+  padding: 9.6rem;
+}
+
+.testimonial-img {
+  width: 64px;
+  border-radius: 50%;
+  background-color: #d0d5e4;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #656565;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
