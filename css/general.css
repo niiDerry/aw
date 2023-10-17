@@ -50,6 +50,7 @@ Paragraph default 1.6
 
 --- BORDER RADIUS
 9px
+11px
 
 --- WHITE SPACE
 - SPACING SYSTEM (px) 
@@ -190,4 +191,8 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem;
+}
+
+strong {
+  font-weight: 500;
 }
