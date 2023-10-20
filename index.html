@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/queries.css" />
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -23,11 +28,13 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Services</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Get in touch</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#services">Services</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Get in touch</a></li>
         </ul>
       </nav>
 
@@ -42,18 +49,20 @@
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">
-              Build your online presence with Absolute Webz
+              Unlock the full potential of your digital journey
             </h1>
             <p class="hero-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              quae saepe maxime ducimus molestias perferendis possimus veniam,
-              dignissimos nulla ab reiciendis? Quaerat hic sed blanditiis
-              facilis
+              Are you ready to elevate your online presence and unlock the full
+              potential of your digital journey? Look no further. AbsoluteWebz
+              is your dedicated partner in achieving online success. With a team
+              of skilled professionals at the forefront of web design,
+              development, and digital marketing, we're here to turn your vision
+              into a reality.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start online process</a
             >
-            <a href="#" class="btn btn--outline">Learn more &rarr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &rarr;</a>
 
             <div class="clients-satisfied">
               <div class="clients-imgs">
@@ -95,26 +104,26 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
-          <h2 class="heading-secondary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h2>
+          <h2 class="heading-secondary">Why Choose AbsoluteWebz?</h2>
+          <!-- <p>
+            At AbsoluteWebz, we're not just another web agency. We're your
+            digital growth catalyst, and here's why you should choose us:
+          </p> -->
         </div>
 
         <div class="container grid grid--2-cols grid-center-v">
           <!-- STEP 01 -->
           <div class="step-text-box">
             <p class="step-number">01</p>
-            <h3 class="heading-tertiary">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
-            </h3>
+            <h3 class="heading-tertiary">Expertise That Counts:</h3>
             <p class="step-description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-              suscipit natus porro dolore consequuntur officiis earum fugiat
-              tenetur iste sapiente adipisci temporibus praesentium voluptatibus
-              nam quos harum, eligendi beatae tempora.
+              Our team comprises seasoned experts in web design, development,
+              and digital marketing. We have a deep understanding of the digital
+              landscape and a proven track record of delivering exceptional
+              results.
             </p>
           </div>
           <div class="step-img-box">
@@ -135,28 +144,22 @@
           </div>
           <div class="step-text-box">
             <p class="step-number">02</p>
-            <h3 class="heading-tertiary">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
-            </h3>
+            <h3 class="heading-tertiary">Tailored Solutions:</h3>
             <p class="step-description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-              suscipit natus porro dolore consequuntur officiis earum fugiat
-              tenetur iste sapiente adipisci temporibus praesentium voluptatibus
-              nam quos harum, eligendi beatae tempora.
+              One size does not fit all. We take a personalized approach to
+              understand your unique goals, challenges, and budget, crafting
+              customized solutions that precisely meet your needs.
             </p>
           </div>
 
           <!-- STEP 03 -->
           <div class="step-text-box">
             <p class="step-number">03</p>
-            <h3 class="heading-tertiary">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
-            </h3>
+            <h3 class="heading-tertiary">Cutting-Edge Technology:</h3>
             <p class="step-description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-              suscipit natus porro dolore consequuntur officiis earum fugiat
-              tenetur iste sapiente adipisci temporibus praesentium voluptatibus
-              nam quos harum, eligendi beatae tempora.
+              We stay at the forefront of technology trends, ensuring that your
+              digital assets are built with the latest tools and techniques,
+              guaranteeing a competitive edge.
             </p>
           </div>
           <div class="step-img-box">
@@ -169,11 +172,12 @@
         </div>
       </section>
 
-      <section class="section-services">
+      <section class="section-services" id="services">
         <div class="container center-text">
           <span class="subheading">Services</span>
           <h2 class="heading-secondary">
-            Lorem ipsum dolor sit amet consectetur
+            AbsoluteWebz offers a comprehensive suite of services to cater to
+            your digital needs:
           </h2>
         </div>
 
@@ -260,27 +264,27 @@
             <ul class="list">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Control Panel</span>
+                <span>Web Design</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Unlimited Revisions</span>
+                <span>Web Development</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Free SSL</span>
+                <span>Digital Marketing</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>SEO</span>
+                <span>E-commerce Solutions</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Cloud Storage</span>
+                <span>Content Creation</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Lorem ipsum</span>
+                <span>SEO & Analytics</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
@@ -303,10 +307,12 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonial-container">
           <span class="subheading">Testimonials</span>
-          <h2 class="heading-secondary">What our Customers are saying</h2>
+          <h2 class="heading-secondary">
+            Read what our satisfied clients have to say about their experiences.
+          </h2>
 
           <div class="testimonials">
             <figure class="testimonial">
@@ -395,7 +401,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">Go online without breaking the bank</h2>
@@ -482,16 +488,19 @@
               class="feature-icon"
               name="lock-closed-outline"
             ></ion-icon>
-            <p class="feature-title">Lorem, ipsum dolor.</p>
+            <p class="feature-title">Web Design</p>
             <p class="feature-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nam?
+              Our creative designers bring your brand to life with visually
+              appealing, user-centric web designs that leave a lasting
+              impression.
             </p>
           </div>
           <div class="feature">
             <ion-icon class="feature-icon" name="settings-outline"></ion-icon>
-            <p class="feature-title">Lorem, ipsum dolor.</p>
+            <p class="feature-title">Digital Marketing</p>
             <p class="feature-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nam?
+              Leverage the power of digital marketing to reach your target
+              audience, increase brand visibility, and boost conversion rates.
             </p>
           </div>
           <div class="feature">
@@ -499,29 +508,34 @@
               class="feature-icon"
               name="shield-checkmark-outline"
             ></ion-icon>
-            <p class="feature-title">Lorem, ipsum dolor.</p>
+            <p class="feature-title">SEO & Analytics</p>
             <p class="feature-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nam?
+              Our experts optimize your online presence for search engines, and
+              we use data-driven insights to refine your strategies.
             </p>
           </div>
           <div class="feature">
             <ion-icon class="feature-icon" name="cloud-done-outline"></ion-icon>
-            <p class="feature-title">Lorem, ipsum dolor.</p>
+            <p class="feature-title">Content Creation</p>
             <p class="feature-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nam?
+              Engage your audience with compelling content, whether it's
+              written, visual, or multimedia. We'll create content that tells
+              your brand's unique story.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
               <h2 class="heading-secondary">Sign Up to our Newsletter!</h2>
               <p class="cta-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
-                minima fugiat mollitia rem in! Animi ipsa dignissimos delectus
+                Are you ready to take your digital journey to the next level?
+                Contact us today for a no-obligation consultation. Let's discuss
+                your project, goals, and how AbsoluteWebz can bring your vision
+                to life.
               </p>
 
               <form action="#" class="cta-form">
